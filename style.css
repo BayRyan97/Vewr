@@ -7,12 +7,6 @@ body {
     color: #333;
 }
 
-.header-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
 header {
     background: linear-gradient(135deg, #00B8FF, #0085FF);
     padding: 40px;
@@ -49,16 +43,6 @@ p {
     transform: scale(1.05);
 }
 
-.btn-email {
-    margin-right: 10px;
-}
-
-.twitter-icon {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 10px;
-}
-
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -72,4 +56,19 @@ p {
 section {
     padding: 60px 0;
     text-align: center;
-    background: linear-gradient(135deg, #fff, #f
+    background: linear-gradient(135deg, #fff, #f9f9f9);
+}
+
+section h2 {
+    color: #0085FF;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background: linear-gradient(135deg, #333, #000);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
