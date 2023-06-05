@@ -7,31 +7,36 @@ body {
 }
 
 header {
-    background-color: #333;
-    padding: 40px;
+    background-color: #0085FF;
+    padding: 80px;
     text-align: center;
 }
 
 h1 {
-    color: #777;
-    font-size: 36px;
+    color: #FFF;
+    font-size: 48px;
     margin-bottom: 20px;
 }
 
 p {
-    color: #999;
-    font-size: 18px;
+    color: #777;
+    font-size: 24px;
     margin-bottom: 20px;
 }
 
 .btn {
-    background-color: #0085FF;
-    color: #fff;
+    background-color: #FF5C00;
+    color: #FFF;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 15px 30px;
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
+    border-radius: 50px;
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FF8500;
 }
 
 .container {
@@ -42,7 +47,7 @@ p {
 
 footer {
     background-color: #333;
-    color: #fff;
+    color: #FFF;
     text-align: center;
     padding: 20px;
 }
