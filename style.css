@@ -19,13 +19,13 @@ h1 {
 }
 
 p {
-    color: #fff;
+    color: #333;
     font-size: 18px;
     margin-bottom: 20px;
 }
 
 .btn {
-    background: linear-gradient(135deg, #0085FF, #0055FF);
+    background-color: #0085FF;
     color: #fff;
     display: inline-block;
     padding: 10px 20px;
@@ -38,6 +38,15 @@ p {
     max-width: 800px;
     margin: 0 auto;
     padding: 40px;
+}
+
+section {
+    background: #fff;
+    padding: 40px;
+}
+
+section h2 {
+    color: #0085FF;
 }
 
 footer {
