@@ -14,39 +14,53 @@ header {
 
 h1 {
     color: #fff;
-    font-size: 36px;
+    font-size: 48px;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 p {
-    color: #333;
-    font-size: 18px;
+    color: #fff;
+    font-size: 24px;
     margin-bottom: 20px;
 }
 
 .btn {
-    background-color: #0085FF;
+    background: linear-gradient(135deg, #0085FF, #0055FF);
     color: #fff;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 24px;
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
+    border-radius: 50px;
+    font-size: 24px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 40px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 section {
-    background: #fff;
-    padding: 40px;
+    padding: 60px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #fff, #f9f9f9);
 }
 
 section h2 {
     color: #0085FF;
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
 footer {
