@@ -7,36 +7,31 @@ body {
 }
 
 header {
-    background-color: #0085FF;
-    padding: 80px;
+    background: linear-gradient(135deg, #00B8FF, #0085FF);
+    padding: 40px;
     text-align: center;
 }
 
 h1 {
-    color: #FFF;
-    font-size: 48px;
+    color: #fff;
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
 p {
-    color: #777;
-    font-size: 24px;
+    color: #fff;
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
 .btn {
-    background-color: #FF5C00;
-    color: #FFF;
+    background: linear-gradient(135deg, #0085FF, #0055FF);
+    color: #fff;
     display: inline-block;
-    padding: 15px 30px;
+    padding: 10px 20px;
     text-decoration: none;
-    border-radius: 50px;
-    font-size: 24px;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #FF8500;
+    border-radius: 5px;
+    font-size: 18px;
 }
 
 .container {
@@ -46,8 +41,8 @@ p {
 }
 
 footer {
-    background-color: #333;
-    color: #FFF;
+    background: linear-gradient(135deg, #333, #000);
+    color: #fff;
     text-align: center;
     padding: 20px;
 }
