@@ -10,11 +10,7 @@ body {
 header {
     background-color: #222;
     color: #ddd;
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+    padding: 20px;
 }
 
 header h1 {
@@ -63,7 +59,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 20px;
+    padding: 40px 20px;
     flex-wrap: wrap;
 }
 
@@ -109,4 +105,3 @@ footer {
     text-decoration: none;
     border-radius: 5px;
 }
-
