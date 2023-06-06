@@ -1,12 +1,17 @@
 const themeSwitch = document.querySelector('#theme-switch');
 
 themeSwitch.addEventListener('change', () => {
-    document.body.classList.toggle('night');
-    document.querySelector('.header').classList.toggle('night');
-    document.querySelector('.footer').classList.toggle('night');
-    
-    let nightElements = document.querySelectorAll('.night');
-    nightElements.forEach((el) => {
-        el.classList.toggle('night');
+    toggleNightMode(document.body);
+    toggleNightMode(document.querySelector('header'));
+    toggleNightMode(document.querySelector('.hero'));
+    toggleNightMode(document.querySelector('.footer'));
+
+    let benefitCards = document.querySelectorAll('.benefit-card');
+    benefitCards.forEach((card) => {
+        toggleNightMode(card);
     });
 });
+
+function toggleNightMode(element) {
+    element.classList.toggle('night');
+}
