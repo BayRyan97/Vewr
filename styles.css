@@ -25,10 +25,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
+    justify-content: space-around;
 }
 
 nav ul li a {
@@ -37,16 +34,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #FF2400;
+    color: #0085ff;
 }
 
 .main {
     padding: 40px;
-    text-align: center;
-}
-
-.hero-text {
-    padding-top: 20px;
     text-align: center;
 }
 
@@ -65,7 +57,7 @@ nav ul li a:hover {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.5s ease;
 }
 
 .cta-button:hover {
@@ -74,42 +66,27 @@ nav ul li a:hover {
 
 .benefits {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     padding: 40px 20px;
-    flex-wrap: wrap;
 }
 
 .benefit-card {
-    flex-basis: 100%;
-    margin: 10px 0;
+    margin: 10px;
     padding: 20px;
     background-color: #444;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
     border-radius: 5px;
+    width: 90%;
 }
 
 .benefit-card h3 {
     margin-top: 0;
 }
 
-@media screen and (min-width: 600px) {
-    .benefit-card {
-        flex-basis: calc(33.33% - 20px);
-    }
-}
-
-footer {
-    background-color: #222;
-    color: #ddd;
+.need {
+    padding: 40px;
     text-align: center;
-    padding: 20px 0;
-    margin-top: auto;
-}
-
-footer img {
-    width: 20px;
-    height: 20px;
 }
 
 .contact {
@@ -126,10 +103,15 @@ footer img {
     margin-bottom: 20px;
 }
 
-.contact .cta-button {
-    background-color: #0085ff;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
+footer {
+    background-color: #222;
+    color: #ddd;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
 }
