@@ -1,20 +1,12 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body, .hero, .benefit-card {
     background-color: #fff;
     color: #333;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-.night {
-    background-color: #333 !important;
-    color: #ddd !important;
-}
-
-header, .hero, .benefit-card, footer {
-    transition: background-color 0.5s ease, color 0.5s ease;
+body.night, .hero.night, .benefit-card.night {
+    background-color: #333;
+    color: #ddd;
 }
 
 header {
