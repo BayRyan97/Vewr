@@ -1,16 +1,10 @@
-body, .hero, .benefit-card {
+body {
     font-family: Arial, sans-serif;
-    transition: background-color 0.5s ease, color 0.5s ease;
-}
-
-body.night, .hero.night, .benefit-card.night {
-    background-color: #333;
-    color: #ddd;
-}
-
-body.day, .hero.day, .benefit-card.day {
-    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     color: #333;
+    background-color: #f4f4f4;
 }
 
 header {
@@ -21,10 +15,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-}
-
-header.night {
-    background-color: #555;
 }
 
 header h1 {
@@ -47,57 +37,9 @@ nav ul li a {
     text-decoration: none;
 }
 
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-}
-
-.switch input { 
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.switch label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 32px;
-    width: 60px;
-    background-color: #ccc;
-    border-radius: 34px;
-}
-
-.switch label:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 3px;
-    background-color: white;
-    border-radius: 50%;
-    transition: 0.4s;
-}
-
-input:checked + label {
-    background-color: #2196F3;
-}
-
-input:checked + label:before {
-    transform: translateX(26px);
-}
-
-.hero {
-    background-color: #f4f4f4;
-    padding: 40px 20px;
+.main {
+    padding: 40px;
     text-align: center;
-}
-
-.hero.night {
-    background-color: #444;
 }
 
 .hero-text h2 {
@@ -119,20 +61,19 @@ input:checked + label:before {
 
 .benefits {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
     padding: 20px;
 }
 
 .benefit-card {
-    margin: 10px 0;
+    flex: 0 0 300px;
+    margin: 10px;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
     border-radius: 5px;
-}
-
-.benefit-card.night {
-    background-color: #444;
 }
 
 .benefit-card h3 {
@@ -146,14 +87,25 @@ footer {
     padding: 20px 0;
 }
 
-footer.night {
-    background-color: #555;
+.contact {
+    padding: 40px;
+    text-align: center;
 }
-@media screen and (min-width: 768px) {
-    .benefits {
-        flex-direction: row;
-    }
-    .benefit-card {
-        flex: 1 1 30%;
-    }
+
+.contact h2 {
+    margin-top: 0;
 }
+
+.contact p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.contact .cta-button {
+    background-color: #0085ff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
