@@ -11,6 +11,9 @@ header {
     background-color: #222;
     color: #ddd;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
@@ -22,6 +25,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    align-items: center;
 }
 
 nav ul li {
@@ -57,14 +61,14 @@ nav ul li a {
 
 .benefits {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     padding: 40px 20px;
     flex-wrap: wrap;
 }
 
 .benefit-card {
-    flex: 1 0 calc(33.33% - 20px);
+    flex: 1 0 calc(33.33% - 40px);
     margin: 10px;
     padding: 20px;
     background-color: #444;
@@ -72,10 +76,10 @@ nav ul li a {
     border-radius: 5px;
 }
 
-@media (max-width: 768px) {
-  .benefit-card {
-    flex: 1 0 100%;
-  }
+@media (max-width: 900px) {
+    .benefit-card {
+        flex-basis: 100%;
+    }
 }
 
 .benefit-card h3 {
