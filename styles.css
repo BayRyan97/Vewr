@@ -61,14 +61,14 @@ nav ul li a {
 
 .benefits {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 .benefit-card {
-    flex: 0 0 300px;
+    flex: 0 0 calc(33.33% - 20px);
     margin: 10px;
     padding: 20px;
     background-color: #444;
