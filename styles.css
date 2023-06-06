@@ -59,4 +59,40 @@ nav ul li a {
     height: 32px;
     width: 60px;
     background-color: #ccc;
-    border-radius: 34
+    border-radius: 34px;
+    transition: background-color 0.4s;
+}
+
+.switch label:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+#theme-switch:checked + label {
+    background-color: #2196F3;
+}
+
+#theme-switch:checked + label:before {
+    transform: translateX(26px);
+}
+
+.hero {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero-text h2 {
+    margin-top: 0;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin:
