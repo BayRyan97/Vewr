@@ -1,14 +1,20 @@
-body, .hero, .benefit-card, footer {
-    transition: background-color 0.5s ease, color 0.5s ease;
-}
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #333;
     background-color: #fff;
+    color: #333;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.night {
+    background-color: #333 !important;
+    color: #ddd !important;
+}
+
+header, .hero, .benefit-card, footer {
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 header {
@@ -19,6 +25,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+}
+
+header.night {
+    background-color: #555;
 }
 
 header h1 {
@@ -90,6 +100,10 @@ input:checked + label:before {
     text-align: center;
 }
 
+.hero.night {
+    background-color: #444;
+}
+
 .hero-text h2 {
     margin-top: 0;
 }
@@ -121,6 +135,10 @@ input:checked + label:before {
     border-radius: 5px;
 }
 
+.benefit-card.night {
+    background-color: #444;
+}
+
 .benefit-card h3 {
     margin-top: 0;
 }
@@ -132,6 +150,9 @@ footer {
     padding: 20px 0;
 }
 
+footer.night {
+    background-color: #555;
+}
 @media screen and (min-width: 768px) {
     .benefits {
         flex-direction: row;
@@ -140,23 +161,3 @@ footer {
         flex: 1 1 30%;
     }
 }
-
-/* Night mode styling */
-body.night {
-    background-color: #333;
-    color: #ddd;
-}
-
-header.night {
-    background-color: #555;
-}
-
-.benefit-card.night {
-    background-color: #444;
-}
-
-.hero.night {
-    background-color: #444;
-}
-
-footer.night {
