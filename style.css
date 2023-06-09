@@ -97,6 +97,18 @@ nav a:hover {
   text-align: center;
 }
 
+#about {
+  background-color: #1f1f1f;
+}
+
+#features {
+  background-color: #2e2e2e;
+}
+
+.content:not(:last-child) {
+  margin-bottom: 40px;
+}
+
 h2 {
   font-size: 36px;
   margin-bottom: 20px;
